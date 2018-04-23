@@ -225,7 +225,7 @@ class TagManager(dbus.service.Object):
         Initialize tag manager object.
 
         Args:
-            controler: FIXME
+            controller: FIXME
             main_object: ``HamsterDBus`` object. This is needed in order to
                 emmit signals.
             bus (optional): FIXME
@@ -311,7 +311,7 @@ class ActivityManager(dbus.service.Object):
         Initialize activity manager object.
 
         Args:
-            controler: FIXME
+            controller: FIXME
             main_object: ``HamsterDBus`` object. This is needed in order to
                 emmit signals.
         """
@@ -411,7 +411,7 @@ class FactManager(dbus.service.Object):
         Initialize fact manager object.
 
         Args:
-            controler: FIXME
+            controller: FIXME
             main_object: ``HamsterDBus`` object. This is needed in order to
                 emmit signals.
         """
