@@ -442,7 +442,9 @@ class FactManager(dbus.service.Object):
         Note: This method is identical to ``Savehamster_lib.Fact`` with the only difference being
             that it takes a ``raw fact`` instead of a serialized ``hamster_lib.Fact`` instance.
         """
-        fact = hamster_lib.Fact.create_from_raw_fact(raw_fact)
+# FIXME/2018-06-09: (lb): Changed fact parser...
+#        fact = hamster_lib.Fact.create_from_raw_fact(raw_fact)
+        fact = hamster_lib.Fact.create_from_factoid(raw_fact)
         result = self._controller.store.facts.save(fact)
 
         self._main_object.FactChanged()

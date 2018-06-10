@@ -462,7 +462,8 @@ class FactManager(object):
         result = self._interface.Save(dbus_fact)
         return helpers.dbus_to_hamster_fact(result)
 
-    def remove(self, fact):
+# FIXME/2018-06-09: (lb): Impl. purge
+    def remove(self, fact, purge=False):
         """
         Remove a Fact.
 
